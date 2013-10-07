@@ -1,5 +1,9 @@
-IV: Ejercicios clase 
-====================
+IV: Ejercicios clase Antonio Melero Bello
+=========================================
+
+### Ejercicio 1
+
+### Ejercicio 2
 
 ### Ejercicio 3
 
@@ -17,6 +21,8 @@ Un sistema de prueba de software e integración continua: Utilizaría virtualiza
 de reproducir entornos de producción de la forma más fiel posible.
 
 
+### Ejercicio 4
+
 ### Ejercicio 5 
 
 Instala el sistema de gestión de fuentes git.
@@ -29,3 +35,5 @@ Ejecutamos desde el terminal:
 
 1. Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero Readme.
 2. Modificar el readme y subir el fichero modificado. 
+
+### Ejercicio 7
