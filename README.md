@@ -34,6 +34,18 @@ Ejecutamos desde el terminal:
 ### Ejercicio 6
 
 1. Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero Readme.
+
+Creo un proyecto llamado ProyectoEjercicio6 incluyendo el fichero Readme.md
+
+Para descargarlo
+
+> $ git clone https://github.com/melero90/ProyectoEjercicio6.git
+
 2. Modificar el readme y subir el fichero modificado. 
+
+Editamos readme con gedit y a continuación:
+
+> $ git add README
+> $ git commit –m 'Versión modificada del proyecto'
 
 ### Ejercicio 7
