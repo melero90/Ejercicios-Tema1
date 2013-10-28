@@ -3,6 +3,8 @@ IV: Ejercicios clase Antonio Melero Bello
 
 ### Ejercicio 1
 
+https://github.com/franciscomanuel/Clase-30-de-septiembre
+
 ### Ejercicio 2
 
 ### Ejercicio 3
