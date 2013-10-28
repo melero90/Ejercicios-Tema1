@@ -84,9 +84,35 @@ Para comparar el uso de recursos visualizamos los resultados en:
 > /sys/fs/cgroup/(memory|cpu|cpuacct)/ejercicio7/(navegador|editor|correo)
 
 
-### Ejercicio 8
+### Ejercicio 9
+
+Comprobar si el procesador o procesadores instalados lo tienen. ¿Qué modelo de procesador es? ¿Qué aparece como salida 
+de esa orden?.
+
+> egrep '^flags.*(vmx|svm)' /proc/cpuinfo
+
+Resultado: flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr 
+sse sse2 ss ht tm pbe nx lm constant_tsc arch_perfmon pebs bts aperfmperf pni dtes64 monitor ds_cpl vmx smx est tm2 
+ssse3 cx16 xtpr pdcm sse4_1 lahf_lm dtherm tpr_shadow vnmi flexpriority
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 
+ss ht tm pbe nx lm constant_tsc arch_perfmon pebs bts aperfmperf pni dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 
+xtpr pdcm sse4_1 lahf_lm dtherm tpr_shadow vnmi flexpriority
+
+Mi procesador es un Intel Core Centrino2 a 2,26Ghz.
 
 
+### Ejercicio 10
+
+Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+
+Ejecutamos en la terminal:
+
+> kvm-ok
+
+Resultado:
+
+> INFO: /dev/kvm exists
+KVM acceleration can be used
 
 
 
