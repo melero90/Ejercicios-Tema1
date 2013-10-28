@@ -114,6 +114,12 @@ Resultado:
 > INFO: /dev/kvm exists
 KVM acceleration can be used
 
+### Ejercicio 11
+
+Comentar diferentes soluciones de Software as a Service de uso habitual.
+
+> El Saas que uso de manera muy habitual son GMail. 
+
 
 
 
