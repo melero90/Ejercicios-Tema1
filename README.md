@@ -120,6 +120,32 @@ Comentar diferentes soluciones de Software as a Service de uso habitual.
 
 > El Saas que uso de manera muy habitual son GMail. 
 
+### Ejercicio 12
+
+Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente).
+El entorno virtual que he instalado ha sido virtualenv para Python. El motivo es porque es un lenguaje que estoy 
+aprendiendo en una de las asginaturas de este curso.
+
+> $ sudo pip install virtualenv
+
+Previamente he tenido que instalar pip. La forma de usarlo y activarlo es la siguiente:
+
+> $ virtualenv ENV
+> $ source bin/activate
+
+
+### Ejercicio 13
+
+Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.
+
+Me he dado de alta en OpenShift y lo he utilizado posteriormente para la realización de la práctica 1.
+
+> Debemos acceder a la web:https://www.openshift.com/ y darnos de alta insertando el correo electronico,una contraseña 
+de acceso a la plataforma y algún dato más.
+
+
+
+
 
 
 
