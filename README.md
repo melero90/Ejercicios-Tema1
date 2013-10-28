@@ -62,26 +62,28 @@ Instalamos este paquete:
 
 Crear un grupo que contendrá varios subgrupos. Para crearlo usamos la siguiente orden:
 
-> sudo cgcreate -a melerob -g memory,cpu,cpuacct:pejercicio7
+> sudo cgcreate -a melerob -g memory,cpu,cpuacct:ej7
 
 Este grupo se encarga de controlar la memoria, CPU y de contabilizar el uso de recursos de CPU y da permiso al usuario 
 melero para que trabaje con el.
 
 Creado el grupo, vamos a crear varios subgrupos:
 
-> sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/navegador
-sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/editor
-sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/correo
+> sudo cgcreate -g memory,cpu,cpuacct:ej7/nav
+sudo cgcreate -g memory,cpu,cpuacct:ej7/edit
+sudo cgcreate -g memory,cpu,cpuacct:ej7/mail
 
 Con cgexec asignamos los procesos de cada subgrupo.
 
-> sudo cgexec -g memory,cpu,cpuacct:ejercicio7/navegador firefox
-sudo cgexec -g memory,cpu,cpuacct:ejercicio7/editor gedit
-sudo cgexec -g memory,cpu,cpuacct:ejercicio7/correo thunderbird
+> sudo cgexec -g memory,cpu,cpuacct:ej7/nav firefox
+sudo cgexec -g memory,cpu,cpuacct:ej7/edit gedit
+sudo cgexec -g memory,cpu,cpuacct:ej7/mail thunderbird
 
 Para comparar el uso de recursos visualizamos los resultados en:
 
-> /sys/fs/cgroup/(memory|cpu|cpuacct)/ejercicio7/(navegador|editor|correo)
+> /sys/fs/cgroup/(memory|cpu|cpuacct)/ej7/(nav|edit|mail)
+
+Vemos los resultados.
 
 
 ### Ejercicio 9
