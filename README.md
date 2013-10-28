@@ -1,5 +1,5 @@
-IV: Ejercicios clase Antonio Melero Bello
-=========================================
+TEMA 1 IV: Ejercicios clase Antonio Melero Bello
+================================================
 
 ### Ejercicio 1
 
@@ -51,3 +51,43 @@ Editamos readme con gedit y a continuación:
 > $ git commit –m 'Versión modificada del proyecto'
 
 ### Ejercicio 7
+
+1.- Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador,
+en otro un proceso de textos y en uno último cualquier otro proceso. Comparar el uso de recurso de unos y otros 
+durante un tiempo determinado.
+
+Instalamos este paquete:
+
+> sudo apt-get install cgroup-bin
+
+Crear un grupo que contendrá varios subgrupos. Para crearlo usamos la siguiente orden:
+
+> sudo cgcreate -a melerob -g memory,cpu,cpuacct:pejercicio7
+
+Este grupo se encarga de controlar la memoria, CPU y de contabilizar el uso de recursos de CPU y da permiso al usuario 
+melero para que trabaje con el.
+
+Creado el grupo, vamos a crear varios subgrupos:
+
+> sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/navegador
+sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/editor
+sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/correo
+
+Con cgexec asignamos los procesos de cada subgrupo.
+
+> sudo cgexec -g memory,cpu,cpuacct:ejercicio7/navegador firefox
+sudo cgexec -g memory,cpu,cpuacct:ejercicio7/editor gedit
+sudo cgexec -g memory,cpu,cpuacct:ejercicio7/correo thunderbird
+
+Para comparar el uso de recursos visualizamos los resultados en:
+
+> /sys/fs/cgroup/(memory|cpu|cpuacct)/ejercicio7/(navegador|editor|correo)
+
+
+### Ejercicio 8
+
+
+
+
+
+
